@@ -8,13 +8,13 @@ import pythonBasics2
 
 def test(got, expected):
     prefix = ' OK ' if got == expected else '  X '
-    print ('%s got: %s expected: %s' % (prefix, repr(got), repr(expected)))
+    print('%s got: %s expected: %s' % (prefix, repr(got), repr(expected)))
 
 def main():
     # set which functions to test
-    check_count_threes = True
+    check_count_threes = False
     check_longest_consecutive_repeating_char = False
-    check_is_palindrome = False
+    check_is_palindrome = True
 
     if check_count_threes:
         print('Testing count_threes:')
